@@ -48,15 +48,25 @@ function Interface() {
       ) : null}
       <div className="controls">
         <div className="raw">
-          <div className={`key ${forward ? "active" : ""}`}></div>
+          <div className={`key ${forward ? "active" : ""}`}>
+            <span>W</span>
+          </div>
         </div>
         <div className="raw">
-          <div className={`key ${leftward ? "active" : ""}`}></div>
-          <div className={`key ${backward ? "active" : ""}`}></div>
-          <div className={`key ${rightward ? "active" : ""}`}></div>
+          <div className={`key ${leftward ? "active" : ""}`}>
+            <span>A</span>
+          </div>
+          <div className={`key ${backward ? "active" : ""}`}>
+            <span>S</span>
+          </div>
+          <div className={`key ${rightward ? "active" : ""}`}>
+            <span>D</span>
+          </div>
         </div>
         <div className="raw">
-          <div className={`key large ${jump ? "active" : ""}`}></div>
+          <div className={`key large ${jump ? "active" : ""}`}>
+            <span>SPACE</span>
+          </div>
         </div>
       </div>
     </div>

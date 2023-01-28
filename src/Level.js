@@ -19,10 +19,11 @@ const floor2Material = new THREE.MeshStandardMaterial({
   roughness: 0,
 });
 const obstacleMaterial = new THREE.MeshStandardMaterial({
-  color: "#ff0000",
+  color: "#B33771",
   metalness: 0,
   roughness: 1,
 });
+// "#ff0000"
 const wallMaterial = new THREE.MeshStandardMaterial({
   color: "#887777",
   metalness: 0,
@@ -34,8 +35,8 @@ export function BlockStart({ position = [0, 0, 0] }) {
     <group position={position}>
       <Float floatIntensity={0.25} rotationIntensity={0.25}>
         <Text
-          font=""
-          scale={0.3}
+          font="Righteous-Regular.ttf"
+          scale={0.25}
           maxWidth={0.25}
           lineHeight={0.75}
           textAlign="right"
@@ -201,7 +202,7 @@ export function BlockEnd({ position = [0, 0, 0] }) {
   return (
     <group position={position}>
       {/* Floor */}
-      <Text font="" scale={0.5} position={[0, 2.25, 2]}>
+      <Text font="Righteous-Regular.ttf" scale={0.4} position={[0, 1.75, 2]}>
         FINISH
         <meshBasicMaterial toneMapped={false} />
       </Text>

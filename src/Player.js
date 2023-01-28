@@ -135,7 +135,7 @@ function Player() {
     >
       <mesh castShadow>
         <icosahedronGeometry args={[0.3, 1]} />
-        <meshStandardMaterial flatShading color="mediumpurple" />
+        <meshStandardMaterial flatShading color="#182C61" />
       </mesh>
     </RigidBody>
   );
